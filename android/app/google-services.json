@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "830479175142",
+    "project_id": "flutter-no-signal",
+    "storage_bucket": "flutter-no-signal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830479175142:android:82526de476689e32195a27",
+        "android_client_info": {
+          "package_name": "com.anemoia.example.dev.no_signal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "830479175142-ckm2ehhpvqlcj3a33pgj450qkhfa8mqq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6p4uwr_mQP0ON5Q6froRj0c6ZhbU7L2k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "830479175142-ckm2ehhpvqlcj3a33pgj450qkhfa8mqq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
