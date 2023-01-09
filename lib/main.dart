@@ -35,16 +35,20 @@ class _MainAppState extends ConsumerState<MainApp> {
   Future<void> _init(WidgetRef ref) async {
     //  This is how you can access providers in stateful widgets
     final user = await ref.read(userProvider.future);
+
     if (user != null) {
       //  This is how you can modify the state of the providers
       // **Note:** This would be called only when user was already logged in.
 
       final userData = await ref.read(userDataClassProvider).getCurrentUser();
-      // debugPrint("userData: ${userData}");
-      // debugPrint("user: ${user}");
-      // ref
-      //     .read(currentLoggedUserProvider.state)
-      //     .update((user) => user = userData);
+
+      debugPrint("\n");
+
+      debugPrint("userData: ${userData}");
+      debugPrint("user: ${user.email}");
+      ref
+          .read(currentLoggedUserProvider.state)
+          .update((user) => user = userData);
 
       ref.read(userLoggedInProvider.state).state = true;
     } else {
